@@ -43,7 +43,8 @@ const Contact = () => {
       form.append('from_name', 'Blessing Portfolio Contact');
 
       // Submit via Cloudflare Worker proxy
-      const response = await fetch('/api/contact', {
+      const workerUrl = 'https://blessing-portfolio.okutachiblessing.workers.dev/api/contact';
+      const response = await fetch(workerUrl, {
         method: 'POST',
         body: form,
       });
