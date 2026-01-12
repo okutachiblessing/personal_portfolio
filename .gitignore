@@ -16,4 +16,3 @@ dist/
 .vscode/
 *.pem
 .env.production
-public/resume.pdf
