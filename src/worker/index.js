@@ -10,7 +10,7 @@ export default {
 
     // CORS headers
     const corsHeaders = {
-      'Access-Control-Allow-Origin': import.meta.env.VITE_CORS_ORIGIN || '*',
+      'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, X-Requested-With',
       'Content-Type': 'application/json',
@@ -100,13 +100,26 @@ export default {
       );
     }
 
-    // 404 Not Found
-    return new Response(
-      JSON.stringify({ success: false, error: 'Not found' }),
-      {
-        headers: corsHeaders,
-        status: 404,
-      }
-    );
+    // For all other routes, proxy to the Pages site
+    const pagesUrl = 'https://blessing-portfolio.pages.dev';
+    
+    try {
+      const pageRequest = new Request(pagesUrl + path + url.search, {
+        method: request.method,
+        headers: request.headers,
+        body: request.body,
+      });
+
+      return await fetch(pageRequest);
+    } catch (error) {
+      console.error('Error proxying to Pages:', error);
+      return new Response(
+        JSON.stringify({ error: 'Service unavailable' }),
+        { 
+          headers: corsHeaders,
+          status: 503 
+        }
+      );
+    }
   },
 };
