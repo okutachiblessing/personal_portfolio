@@ -41,27 +41,21 @@ const Contact = () => {
       form.append('subject', formData.subject);
       form.append('message', formData.message);
       form.append('from_name', 'Blessing Portfolio Contact');
+      form.append('redirect', window.location.href);
 
-      // Submit via Cloudflare Worker proxy
-      const workerUrl = 'https://blessing-portfolio.okutachiblessing.workers.dev/api/contact';
-      const response = await fetch(workerUrl, {
+      // Submit directly to Web3Forms with redirect
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: form,
       });
 
-      if (!response.ok) {
-        throw new Error(`Server error: ${response.status}`);
+      if (response.ok) {
+        setSuccess(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSuccess(false), 5000);
+      } else {
+        throw new Error(`Server returned ${response.status}`);
       }
-
-      const data = await response.json();
-      
-      if (!data.success) {
-        throw new Error(data.message || 'Failed to send message');
-      }
-
-      setSuccess(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
       setError(err.message || 'Failed to send message. Please try again.');
       console.error('Form submission error:', err);
