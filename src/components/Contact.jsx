@@ -42,14 +42,22 @@ const Contact = () => {
       form.append('message', formData.message);
       form.append('from_name', 'Blessing Portfolio Contact');
 
-      // Submit to Web3Forms (server-side call)
-      const response = await fetch('https://api.web3forms.com/submit', {
+      // Submit via Cloudflare Worker proxy
+      const response = await fetch('/api/contact', {
         method: 'POST',
         body: form,
-        mode: 'no-cors'
       });
 
-      // With no-cors, we can't read the response, so we assume success
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
+      if (!data.success) {
+        throw new Error(data.message || 'Failed to send message');
+      }
+
       setSuccess(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSuccess(false), 5000);

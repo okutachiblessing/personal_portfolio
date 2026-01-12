@@ -100,6 +100,32 @@ export default {
       );
     }
 
+    // Contact form submission endpoint
+    if (path === '/api/contact' && request.method === 'POST') {
+      try {
+        const formData = await request.formData();
+        
+        // Forward to Web3Forms
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        return new Response(
+          JSON.stringify(result),
+          { headers: corsHeaders, status: response.status }
+        );
+      } catch (error) {
+        console.error('Contact form error:', error);
+        return new Response(
+          JSON.stringify({ success: false, error: error.message }),
+          { headers: corsHeaders, status: 500 }
+        );
+      }
+    }
+
     // For all other routes, proxy to the Pages site
     const pagesUrl = 'https://blessing-portfolio.pages.dev';
     
