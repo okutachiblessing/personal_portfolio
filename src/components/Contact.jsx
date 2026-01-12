@@ -33,29 +33,41 @@ const Contact = () => {
         throw new Error('All fields are required');
       }
 
-      // Create FormData for Web3Forms
-      const form = new FormData();
-      form.append('access_key', 'bfa326d0-3b49-4894-9196-1d0c18c3483a');
-      form.append('name', formData.name);
-      form.append('email', formData.email);
-      form.append('subject', formData.subject);
-      form.append('message', formData.message);
-      form.append('from_name', 'Blessing Portfolio Contact');
-      form.append('redirect', window.location.href);
+      // Use Web3Forms with a simple workaround - submit via form instead of fetch
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://api.web3forms.com/submit';
+      form.target = '_blank';
+      form.style.display = 'none';
 
-      // Submit directly to Web3Forms with redirect
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: form,
-      });
+      // Add form fields
+      const fields = {
+        access_key: 'bfa326d0-3b49-4894-9196-1d0c18c3483a',
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        from_name: 'Blessing Portfolio Contact',
+      };
 
-      if (response.ok) {
-        setSuccess(true);
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        setTimeout(() => setSuccess(false), 5000);
-      } else {
-        throw new Error(`Server returned ${response.status}`);
+      for (const [key, value] of Object.entries(fields)) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
       }
+
+      document.body.appendChild(form);
+      form.submit();
+      
+      // Show success message immediately
+      setSuccess(true);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setTimeout(() => setSuccess(false), 5000);
+      
+      // Clean up
+      document.body.removeChild(form);
     } catch (err) {
       setError(err.message || 'Failed to send message. Please try again.');
       console.error('Form submission error:', err);
