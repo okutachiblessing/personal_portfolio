@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessing Ele Agbonkpolor - Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+            background-attachment: fixed;
+        }
+        
+        .glow {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+        
+        .card-hover {
+            transition: all 300ms ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06b6d4;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur z-50 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+                    BEA
+                </a>
+                <div class="hidden md:flex gap-8">
+                    <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="text-center max-w-3xl mx-auto">
+            <div class="mb-8 animate-fade-in">
+                <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 p-1">
+                    <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-5xl font-bold">
+                        BA
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="text-6xl font-bold mb-6 animate-slide-up bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Blessing Ele Agbonkpolor
+            </h1>
+            
+            <h2 class="text-2xl text-gray-300 mb-4 animate-slide-up">
+                Full Stack Developer & Tech Enthusiast
+            </h2>
+            
+            <p class="text-gray-400 text-lg mb-8 leading-relaxed animate-slide-up">
+                Building scalable web applications with modern technologies. Passionate about clean code, user experience, and open-source contributions.
+            </p>
+            
+            <div class="flex gap-4 justify-center flex-wrap mb-12">
+                <a href="#projects" class="px-8 py-3 bg-blue-500 hover:bg-cyan-500 text-white rounded-lg font-semibold glow transition">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-3 border-2 border-blue-500 hover:bg-blue-500/10 text-blue-400 rounded-lg font-semibold transition">
+                    Get In Touch
+                </a>
+            </div>
+            
+            <div class="flex gap-6 justify-center flex-wrap">
+                <a href="#" class="text-blue-400 hover:text-cyan-400 transition text-2xl">🐙</a>
+                <a href="#" class="text-blue-400 hover:text-cyan-400 transition text-2xl">💼</a>
+                <a href="#" class="text-blue-400 hover:text-cyan-400 transition text-2xl">🐦</a>
+                <a href="#" class="text-blue-400 hover:text-cyan-400 transition text-2xl">✉️</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gradient-to-b from-gray-900/50 to-gray-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                About Me
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I'm a passionate full-stack developer with expertise in building modern web applications. With over 5+ years of experience, I've worked on projects ranging from startups to enterprise solutions.
+                    </p>
+                    
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I'm proficient in React, Node.js, TypeScript, and cloud technologies like AWS and Cloudflare. I believe in writing clean, maintainable code and creating intuitive user experiences.
+                    </p>
+                    
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        When I'm not coding, you'll find me contributing to open-source projects, writing technical articles, or exploring new technologies.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800/50 border border-blue-500/30 p-6 rounded-lg text-center hover:border-blue-500/60 transition">
+                        <h3 class="text-3xl font-bold text-blue-400 mb-2">50+</h3>
+                        <p class="text-gray-400">Projects</p>
+                    </div>
+                    <div class="bg-gray-800/50 border border-blue-500/30 p-6 rounded-lg text-center hover:border-blue-500/60 transition">
+                        <h3 class="text-3xl font-bold text-blue-400 mb-2">5+</h3>
+                        <p class="text-gray-400">Years Experience</p>
+                    </div>
+                    <div class="bg-gray-800/50 border border-blue-500/30 p-6 rounded-lg text-center hover:border-blue-500/60 transition">
+                        <h3 class="text-3xl font-bold text-blue-400 mb-2">100+</h3>
+                        <p class="text-gray-400">Happy Clients</p>
+                    </div>
+                    <div class="bg-gray-800/50 border border-blue-500/30 p-6 rounded-lg text-center hover:border-blue-500/60 transition">
+                        <h3 class="text-3xl font-bold text-blue-400 mb-2">200+</h3>
+                        <p class="text-gray-400">Code Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Featured Projects
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        🛍️
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Full-stack e-commerce platform with real-time inventory management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">MongoDB</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        ✓
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Collaborative task management with real-time updates.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Tailwind</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        📊
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Real-time analytics with data visualization and reporting.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        💰
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Crypto Tracker</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Real-time cryptocurrency tracking with price alerts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">API</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Redux</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        📸
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Social Media Feed</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Instagram-like platform with image sharing and notifications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">React</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">AWS S3</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">GraphQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg overflow-hidden card-hover">
+                    <div class="h-40 bg-gradient-to-br from-blue-500/10 to-cyan-400/10 flex items-center justify-center text-6xl">
+                        📚
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">API Doc Generator</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Automated documentation generator from code comments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">OpenAPI</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 text-xs rounded-full">Markdown</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">📝 Code</a>
+                            <a href="#" class="text-blue-400 hover:text-cyan-400 transition">🔗 Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-900/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Skills & Expertise
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">React</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">TypeScript</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Tailwind</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Next.js</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Vue.js</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Node.js</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Express</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Python</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">GraphQL</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">REST APIs</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">WebSockets</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">MongoDB</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">PostgreSQL</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Firebase</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">MySQL</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Redis</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">DynamoDB</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">DevOps & Cloud</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Docker</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">AWS</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Cloudflare</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">GitHub Actions</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">CI/CD</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Linux</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Git</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">VS Code</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Webpack</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Vite</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">npm/yarn</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Vercel</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 card-hover">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Other</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">SEO</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Accessibility</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Testing</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Agile</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Figma</span>
+                        <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 text-blue-300 rounded-full text-sm">Writing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proficiency -->
+            <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-8">
+                <h3 class="text-2xl font-bold mb-8">Core Competencies</h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Full Stack Development</span>
+                            <span class="text-blue-400">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-400" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>React & Modern Frontend</span>
+                            <span class="text-blue-400">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-400" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Backend & API Design</span>
+                            <span class="text-blue-400">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-400" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span>Cloud & DevOps</span>
+                            <span class="text-blue-400">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-400" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Get In Touch
+            </h2>
+            
+            <p class="text-center text-gray-400 mb-12">
+                Have a project in mind or want to collaborate? Let's talk!
+            </p>
+            
+            <form class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-8 space-y-6 mb-12">
+                <div>
+                    <label class="block text-white font-medium mb-2">Name</label>
+                    <input type="text" placeholder="Your name" class="w-full px-4 py-3 bg-gray-800 border border-blue-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-400">
+                </div>
+                
+                <div>
+                    <label class="block text-white font-medium mb-2">Email</label>
+                    <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 bg-gray-800 border border-blue-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-400">
+                </div>
+                
+                <div>
+                    <label class="block text-white font-medium mb-2">Subject</label>
+                    <input type="text" placeholder="Message subject" class="w-full px-4 py-3 bg-gray-800 border border-blue-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-400">
+                </div>
+                
+                <div>
+                    <label class="block text-white font-medium mb-2">Message</label>
+                    <textarea placeholder="Your message..." rows="5" class="w-full px-4 py-3 bg-gray-800 border border-blue-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 resize-none"></textarea>
+                </div>
+                
+                <button class="w-full px-6 py-3 bg-blue-500 hover:bg-cyan-500 text-white rounded-lg font-semibold glow transition">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="grid sm:grid-cols-3 gap-6">
+                <a href="mailto:blessing@example.com" class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 text-center card-hover">
+                    <p class="text-gray-400 mb-2">Email</p>
+                    <p class="text-white font-semibold">blessing@example.com</p>
+                </a>
+                <a href="tel:+1234567890" class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 text-center card-hover">
+                    <p class="text-gray-400 mb-2">Phone</p>
+                    <p class="text-white font-semibold">+1 (555) 123-4567</p>
+                </a>
+                <div class="bg-gray-800/30 border border-blue-500/20 rounded-lg p-6 text-center card-hover">
+                    <p class="text-gray-400 mb-2">Location</p>
+                    <p class="text-white font-semibold">Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 border-t border-blue-500/20 py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center text-gray-400">
+                <p>© 2025 Blessing Ele Agbonkpolor. All rights reserved.</p>
+                <p class="mt-2">Made with ❤️ by Blessing</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Visitor Counter -->
+    <div class="fixed bottom-4 right-4 bg-gray-800/80 border border-blue-500/30 rounded-lg px-4 py-3 text-sm text-gray-300">
+        <p>👋 Visitors: <span class="text-blue-400 font-bold">1,234</span></p>
+    </div>
+</body>
+</html>
