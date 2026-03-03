@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
+import CodeViewer from './components/CodeViewer';
 import Articles from './components/Articles';
 import MediumArticles from './components/MediumArticles';
 import Contact from './components/Contact';
@@ -29,6 +30,7 @@ function App() {
         <Skills />
         <Education />
         <Certifications />
+        <CodeViewer />
         <Articles />
         <MediumArticles />
         <Contact />

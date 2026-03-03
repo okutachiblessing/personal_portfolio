@@ -13,6 +13,7 @@ const Navigation = () => {
     { label: 'Education', href: '#education' },
     { label: 'Projects', href: '#projects' },
     { label: 'Certifications', href: '#certifications' },
+    { label: 'Code Examples', href: '#code-examples' },
     { label: 'Articles', href: '#articles' },
     { label: 'Medium', href: '#medium-articles' },
     { label: 'Contact', href: '#contact' },
