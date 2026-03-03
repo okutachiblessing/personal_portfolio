@@ -20,6 +20,22 @@ const Certifications = () => {
       icon: FaCertificate,
       color: 'from-purple-500 to-pink-500',
     },
+    {
+      title: 'Certified Scrum Master (CSM)',
+      issuer: 'Scrum Alliance',
+      date: '2026',
+      description: 'Professional certification demonstrating knowledge of Scrum framework principles, Agile practices, servant leadership, sprint planning, backlog refinement, stakeholder collaboration, and facilitating high-performing Scrum teams.',
+      icon: FaAward,
+      color: 'from-blue-500 to-indigo-500',
+    },
+    {
+      title: 'Certified Scrum Product Owner (CSPO)',
+      issuer: 'Scrum Alliance',
+      date: '2026',
+      description: 'Certification focused on product ownership within Agile environments, including product vision, backlog management, stakeholder alignment, value prioritization, roadmap planning, and maximizing business outcomes through iterative delivery.',
+      icon: FaCertificate,
+      color: 'from-purple-500 to-pink-500',
+    },
   ];
 
   const containerVariants = {
@@ -100,7 +116,7 @@ const Certifications = () => {
           className="bg-secondary/30 backdrop-blur border border-accent/20 rounded-lg p-8"
         >
           <h3 className="text-2xl font-bold mb-6 text-white">Key Expertise Areas</h3>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div>
               <h4 className="text-accent font-bold mb-4">Project Management</h4>
               <ul className="space-y-2 text-gray-300">
@@ -140,6 +156,27 @@ const Certifications = () => {
                 <li className="flex gap-2">
                   <FaCheck className="text-accent mt-1" />
                   Compliance & Governance
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-accent font-bold mb-4">Data Analytics</h4>
+              <ul className="space-y-2 text-gray-300">
+                <li className="flex gap-2">
+                  <FaCheck className="text-accent mt-1" />
+                  Data Quality & Validation
+                </li>
+                <li className="flex gap-2">
+                  <FaCheck className="text-accent mt-1" />
+                  SQL & Python Analysis
+                </li>
+                <li className="flex gap-2">
+                  <FaCheck className="text-accent mt-1" />
+                  Business Intelligence
+                </li>
+                <li className="flex gap-2">
+                  <FaCheck className="text-accent mt-1" />
+                  Clinical Data Insights
                 </li>
               </ul>
             </div>

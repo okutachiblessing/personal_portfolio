@@ -19,18 +19,23 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm a strategic Agile Project Manager with expertise in delivering high-impact software solutions. 
-                With 5+ years of experience managing complex projects, I've led cross-functional teams from startups to enterprise environments.
+                I'm a strategic Agile Project Manager and Data Analytics specialist with expertise in delivering high-impact solutions. 
+                With 5+ years of experience managing complex projects, I've led cross-functional teams from startups to enterprise environments, combining Agile best practices with data-driven decision-making.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                PMI-ACP certified and ISC2 certified in Cybersecurity, I specialize in Agile methodologies, risk management, and security-by-design principles. 
-                I'm passionate about building secure, scalable applications while maintaining team velocity and stakeholder satisfaction.
+                PMI-ACP and Scrum certified (CSM/CSPO), I specialize in Agile methodologies, Scrum frameworks, and risk management. 
+                I've recently deepened expertise in healthcare data analytics, transforming Electronic Medical Records (EMR) and clinical datasets into actionable insights using Python, SQL, and Power BI.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Beyond project management, I'm deeply involved in cybersecurity practices, DevOps automation, and continuous improvement initiatives.
-                I actively contribute to knowledge sharing through technical articles and mentoring development teams.
+                My unique blend of project management and analytics enables me to lead data transformation initiatives, manage Agile team velocity, 
+                and deliver enterprise dashboards. I'm proficient in data cleaning, quality assurance, and translating technical insights into business impact.
+              </p>
+
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Beyond technical skills, I'm passionate about mentoring development teams, DevSecOps automation, continuous improvement, 
+                and knowledge sharing through technical articles and speaking engagements.
               </p>
 
               <div className="pt-4">
@@ -38,6 +43,7 @@ const About = () => {
                   href="/resume.pdf"
                   className="inline-block px-6 py-3 bg-accent hover:bg-highlight text-white rounded-lg font-semibold transition-all duration-300 glow"
                   download
+                  aria-label="Download resume"
                 >
                   Download Resume
                 </a>
@@ -47,10 +53,12 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { number: '50+', label: 'Projects' },
+                { number: '50+', label: 'Projects Delivered' },
                 { number: '5+', label: 'Years Experience' },
-                { number: '100+', label: 'Happy Clients' },
-                { number: '200+', label: 'Code Reviews' },
+                { number: '12+', label: 'Agile Sprints' },
+                { number: '4', label: 'Certifications' },
+                { number: '500K+', label: 'Records Processed' },
+                { number: '99.8%', label: 'Data Accuracy' },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -61,7 +69,7 @@ const About = () => {
                   className="bg-secondary/50 backdrop-blur p-6 rounded-lg border border-accent/30 text-center hover:border-accent/60 transition-all duration-300"
                 >
                   <h3 className="text-3xl font-bold text-accent mb-2">{stat.number}</h3>
-                  <p className="text-gray-400">{stat.label}</p>
+                  <p className="text-gray-400 text-sm">{stat.label}</p>
                 </motion.div>
               ))}
             </div>
