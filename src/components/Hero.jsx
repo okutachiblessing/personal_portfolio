@@ -57,7 +57,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-xl sm:text-2xl text-accent mb-4 font-semibold"
         >
-          Agile Project Manager & Cybersecurity Specialist
+          Agile Project Manager | Data Analytics Specialist | Cybersecurity Expert
         </motion.h2>
 
         {/* Certifications */}
@@ -65,7 +65,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-gray-300 text-base sm:text-lg mb-6 font-medium"
         >
-          PMI-ACP Certified | ISC2 Certified in Cybersecurity
+          PMI-ACP Certified | CSM/CSPO Certified | ISC2 Cybersecurity | Data Analytics
         </motion.p>
 
         {/* Location/Status */}
@@ -73,7 +73,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-gray-300 text-base sm:text-lg mb-2"
         >
-          Agile Coach | DevSecOps Advocate | Risk Management Specialist
+          Agile Coach | Data-Driven Decision Maker | DevSecOps Advocate | Risk Management Specialist
         </motion.p>
 
         <motion.p
@@ -82,7 +82,7 @@ const Hero = () => {
         >
           📍 Whitby, Ontario | 📞 +1 (437) 871-6680
         </motion.p>
-        <motion.div variants={itemVariants} className="flex gap-4 justify-center flex-wrap mb-12">
+        <motion.div variants={itemVariants} className="flex gap-4 justify-center flex-wrap mb-8">
           <a
             href="#projects"
             className="px-8 py-3 bg-accent hover:bg-highlight text-primary font-bold rounded-lg transition glow"
@@ -90,17 +90,30 @@ const Hero = () => {
             View Projects
           </a>
           <a
-            href="/resume.pdf"
-            className="px-8 py-3 border-2 border-accent hover:bg-accent/10 text-accent rounded-lg font-semibold transition"
-            download
-          >
-            Download Resume
-          </a>
-          <a
             href="#contact"
             className="px-8 py-3 border-2 border-accent hover:bg-accent/10 text-accent rounded-lg font-semibold transition"
           >
             Contact Me
+          </a>
+        </motion.div>
+
+        {/* Resume Download Options */}
+        <motion.div variants={itemVariants} className="flex gap-3 justify-center flex-wrap">
+          <a
+            href="/resume.pdf"
+            className="px-6 py-2 bg-secondary/50 border border-accent/50 hover:border-accent text-accent rounded-lg font-semibold transition text-sm"
+            title="Download PDF Resume"
+            download
+          >
+            📄 Resume (PDF)
+          </a>
+          <a
+            href="/resume.docx"
+            className="px-6 py-2 bg-secondary/50 border border-accent/50 hover:border-accent text-accent rounded-lg font-semibold transition text-sm"
+            title="Download Word Resume"
+            download
+          >
+            📋 Resume (DOCX)
           </a>
         </motion.div>
 

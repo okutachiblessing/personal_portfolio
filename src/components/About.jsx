@@ -19,33 +19,43 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm a strategic Agile Project Manager and Data Analytics specialist with expertise in delivering high-impact solutions. 
+                I'm a strategic **Agile Project Manager** and **Data Analytics Specialist** with expertise in delivering high-impact solutions. 
                 With 5+ years of experience managing complex projects, I've led cross-functional teams from startups to enterprise environments, combining Agile best practices with data-driven decision-making.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                PMI-ACP and Scrum certified (CSM/CSPO), I specialize in Agile methodologies, Scrum frameworks, and risk management. 
-                I've recently deepened expertise in healthcare data analytics, transforming Electronic Medical Records (EMR) and clinical datasets into actionable insights using Python, SQL, and Power BI.
+                **My Unique Blend:**
+                - **Agile Excellence:** PMI-ACP, Certified Scrum Master (CSM), Certified Scrum Product Owner (CSPO) certifications
+                - **Data Analytics:** Hands-on experience transforming Electronic Medical Records (EMR) and clinical datasets into actionable insights using Python, SQL, and Power BI
+                - **Security-First Mindset:** ISC2 Cybersecurity certified with expertise in risk management and secure practices
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                My unique blend of project management and analytics enables me to lead data transformation initiatives, manage Agile team velocity, 
-                and deliver enterprise dashboards. I'm proficient in data cleaning, quality assurance, and translating technical insights into business impact.
+                I recently led an end-to-end **Clinical Data Intelligence Initiative**, managing Agile teams through data cleaning, quality assurance, and validation cycles. 
+                I delivered interactive Power BI dashboards that enable clinicians to make evidence-based decisions, while reducing data processing time by 68% with 99.8% accuracy.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Beyond technical skills, I'm passionate about mentoring development teams, DevSecOps automation, continuous improvement, 
-                and knowledge sharing through technical articles and speaking engagements.
+                My expertise spans **Agile transformation**, **healthcare data analytics**, **DevSecOps automation**, and **continuous improvement**. 
+                I'm passionate about mentoring teams, knowledge sharing, and translating technical insights into business impact.
               </p>
 
-              <div className="pt-4">
+              <div className="pt-4 flex gap-4 flex-wrap">
                 <a
                   href="/resume.pdf"
                   className="inline-block px-6 py-3 bg-accent hover:bg-highlight text-white rounded-lg font-semibold transition-all duration-300 glow"
                   download
-                  aria-label="Download resume"
+                  aria-label="Download resume as PDF"
                 >
-                  Download Resume
+                  📄 Download Resume (PDF)
+                </a>
+                <a
+                  href="/resume.docx"
+                  className="inline-block px-6 py-3 border-2 border-accent hover:bg-accent/10 text-accent rounded-lg font-semibold transition-all duration-300"
+                  download
+                  aria-label="Download resume as DOCX"
+                >
+                  📋 Download Resume (DOCX)
                 </a>
               </div>
             </div>
