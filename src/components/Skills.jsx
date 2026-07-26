@@ -4,16 +4,24 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   const skillCategories = [
     {
+      title: 'Business Analysis & Requirements',
+      skills: ['Requirements Gathering', 'Business Process Analysis', 'Gap Analysis', 'Stakeholder Interviews', 'Use Case Development', 'User Stories'],
+    },
+    {
+      title: 'Data Analytics & Reporting',
+      skills: ['Power BI', 'Dashboard Development', 'SQL', 'Microsoft Excel (Advanced)', 'Data Visualization', 'ETL Processes'],
+    },
+    {
       title: 'Project Management',
       skills: ['Agile/Scrum', 'Kanban', 'Sprint Planning', 'Backlog Management', 'Stakeholder Management', 'Risk Management'],
     },
     {
-      title: 'Cybersecurity',
-      skills: ['Security Risk Assessment', 'Incident Response', 'Compliance (ISO27001, NIST)', 'Security Governance', 'Vulnerability Management', 'Threat Analysis'],
-    },
-    {
       title: 'Development Technologies',
       skills: ['React', 'Node.js', 'TypeScript', 'Python', 'REST APIs', 'GraphQL'],
+    },
+    {
+      title: 'Cybersecurity',
+      skills: ['Security Risk Assessment', 'Incident Response', 'Compliance (ISO27001, NIST)', 'Security Governance', 'Vulnerability Management', 'Threat Analysis'],
     },
     {
       title: 'DevSecOps & Cloud',
@@ -25,7 +33,7 @@ const Skills = () => {
     },
     {
       title: 'Core Competencies',
-      skills: ['Team Leadership', 'Process Improvement', 'Security By Design', 'Technical Communication', 'Agile Coaching', 'Metrics & Analytics'],
+      skills: ['Process Improvement', 'Technical Communication', 'Business Acumen', 'Data-Driven Decision Making', 'Team Leadership', 'Metrics & Analytics'],
     },
   ];
 
@@ -95,10 +103,11 @@ const Skills = () => {
           <h3 className="text-2xl font-bold mb-8 text-white">Core Competencies</h3>
           <div className="space-y-4">
             {[
-              { name: 'Agile Project Management', level: 95 },
-              { name: 'Risk & Compliance Management', level: 92 },
-              { name: 'Cybersecurity & Incident Response', level: 90 },
-              { name: 'Team Leadership & Coaching', level: 88 },
+              { name: 'Business & Systems Analysis', level: 95 },
+              { name: 'Data Analytics & Reporting', level: 93 },
+              { name: 'Process Improvement', level: 91 },
+              { name: 'Agile Project Management', level: 88 },
+              { name: 'Cybersecurity & Compliance', level: 85 },
             ].map((skill, index) => (
               <div key={index}>
                 <div className="flex justify-between mb-2">

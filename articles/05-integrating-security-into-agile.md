@@ -533,4 +533,4 @@ The question isn't whether your organization will adopt DevSecOps—it's when. M
 
 ---
 
-**About the Author:** ISC2-certified cybersecurity specialist with 5+ years of experience implementing DevSecOps in enterprise environments. Passionate about building security cultures that enable, rather than inhibit, velocity.
+**About the Author:** ISC2-certified cybersecurity specialist with 10 years of experience implementing DevSecOps in enterprise environments. Passionate about building security cultures that enable, rather than inhibit, velocity.

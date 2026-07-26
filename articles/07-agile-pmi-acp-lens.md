@@ -480,4 +480,4 @@ It's disciplined, intentional delivery of value in the face of uncertainty. That
 
 ---
 
-**About the Author:** PMI-ACP certified Agile Project Manager with 5+ years of experience leading agile transformations across FinTech, SaaS, and healthcare sectors. Passionate about bridging traditional PM discipline with agile adaptability to deliver real customer value. Specializes in helping teams move from activity-focused delivery to outcome-focused excellence.
+**About the Author:** PMI-ACP certified Agile Project Manager with 10 years of experience leading agile transformations across FinTech, SaaS, and healthcare sectors. Passionate about bridging traditional PM discipline with agile adaptability to deliver real customer value. Specializes in helping teams move from activity-focused delivery to outcome-focused excellence.

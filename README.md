@@ -260,7 +260,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Email**: blessing@example.com
 - **GitHub**: [@okutachiblessing](https://github.com/okutachiblessing)
-- **LinkedIn**: [Blessing Agbonkpolor](https://linkedin.com/in/blessing-agbonkpolor)
+- **LinkedIn**: [Blessing Agbonkpolor](https://www.linkedin.com/in/blessing-ele-agbonkpolor)
 - **Twitter**: [@your_handle](https://twitter.com/your_handle)
 
 ## 🎯 Roadmap

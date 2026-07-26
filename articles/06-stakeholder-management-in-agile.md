@@ -606,4 +606,4 @@ Invest in stakeholder management. It's as important as sprint planning and retro
 
 ---
 
-**About the Author:** PMI-ACP certified Agile Project Manager with 5+ years of experience managing complex stakeholder ecosystems across enterprise organizations. Passionate about building transparent partnerships that enable organizational success.
+**About the Author:** PMI-ACP certified Agile Project Manager with 10 years of experience managing complex stakeholder ecosystems across enterprise organizations. Passionate about building transparent partnerships that enable organizational success.

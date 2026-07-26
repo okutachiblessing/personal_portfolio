@@ -906,4 +906,4 @@ Build a culture where that's possible. Everything else—velocity, quality, inno
 
 ---
 
-**About the Author:** PMI-ACP certified Agile coach with 5+ years of experience building and scaling high-performing teams across FinTech, SaaS, and healthcare. Passionate about creating psychological safety and helping individuals and teams reach their full potential.
+**About the Author:** PMI-ACP certified Agile coach with 10 years of experience building and scaling high-performing teams across FinTech, SaaS, and healthcare. Passionate about creating psychological safety and helping individuals and teams reach their full potential.

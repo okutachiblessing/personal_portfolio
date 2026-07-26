@@ -714,4 +714,4 @@ That's Agile risk management done right.
 
 ---
 
-**About the Author:** PMI-ACP certified Agile Project Manager with 5+ years implementing risk management in Agile environments across FinTech, SaaS, and healthcare. Passionate about building resilient teams that turn uncertainty into strategic advantage. Specializes in helping teams progress from reactive firefighting to predictive risk leadership.
+**About the Author:** PMI-ACP certified Agile Project Manager with 10 years implementing risk management in Agile environments across FinTech, SaaS, and healthcare. Passionate about building resilient teams that turn uncertainty into strategic advantage. Specializes in helping teams progress from reactive firefighting to predictive risk leadership.

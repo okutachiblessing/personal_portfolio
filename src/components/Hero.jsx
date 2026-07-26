@@ -57,7 +57,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-xl sm:text-2xl text-accent mb-4 font-semibold"
         >
-          Agile Project Manager | Data Analytics Specialist | Cybersecurity Expert
+          Business & Systems Analyst | Analytics & Reporting | Power BI Developer
         </motion.h2>
 
         {/* Certifications */}
@@ -65,7 +65,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-gray-300 text-base sm:text-lg mb-6 font-medium"
         >
-          PMI-ACP Certified | CSM/CSPO Certified | ISC2 Cybersecurity | Data Analytics
+          PMP & PMI-ACP Certified | Power BI Developer | Business Analyst | ISC2 Cybersecurity Certified
         </motion.p>
 
         {/* Location/Status */}

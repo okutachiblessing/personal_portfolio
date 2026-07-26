@@ -5,20 +5,20 @@ import { FaCertificate, FaAward, FaCheck } from 'react-icons/fa';
 const Certifications = () => {
   const certifications = [
     {
+      title: 'Project Management Professional (PMP)',
+      issuer: 'Project Management Institute (PMI)',
+      date: '2025',
+      description: 'Credential demonstrating comprehensive project management expertise across project planning, execution, monitoring, and closure. Expertise in risk management, stakeholder engagement, team leadership, and delivering projects on time and within budget across various industries.',
+      icon: FaAward,
+      color: 'from-green-500 to-emerald-500',
+    },
+    {
       title: 'PMI-ACP (Agile Certified Practitioner)',
       issuer: 'Project Management Institute (PMI)',
       date: '2025',
       description: 'Certified Agile Project Manager with expertise in Agile methodologies, Scrum, Kanban, and iterative project delivery.',
       icon: FaAward,
       color: 'from-blue-500 to-cyan-500',
-    },
-    {
-      title: 'ISC2 Certified in Cybersecurity',
-      issuer: 'International Information System Security Certification Consortium',
-      date: '2024',
-      description: 'Comprehensive knowledge in security principles, risk management, incident response, and information asset protection.',
-      icon: FaCertificate,
-      color: 'from-purple-500 to-pink-500',
     },
     {
       title: 'Certified Scrum Master (CSM)',
@@ -33,6 +33,14 @@ const Certifications = () => {
       issuer: 'Scrum Alliance',
       date: '2026',
       description: 'Certification focused on product ownership within Agile environments, including product vision, backlog management, stakeholder alignment, value prioritization, roadmap planning, and maximizing business outcomes through iterative delivery.',
+      icon: FaCertificate,
+      color: 'from-purple-500 to-pink-500',
+    },
+    {
+      title: 'ISC2 Certified in Cybersecurity',
+      issuer: 'International Information System Security Certification Consortium',
+      date: '2024',
+      description: 'Comprehensive knowledge in security principles, risk management, incident response, and information asset protection.',
       icon: FaCertificate,
       color: 'from-purple-500 to-pink-500',
     },

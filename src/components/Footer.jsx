@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">Blessing Ele Agbonkpolor</h3>
             <p className="text-gray-400 text-sm">
-              Agile Project Manager and Cybersecurity Specialist delivering secure, high-impact solutions.
+              Business & Systems Analyst specializing in analytics, reporting, and Power BI-driven solutions with 10 years of professional experience.
             </p>
           </div>
 

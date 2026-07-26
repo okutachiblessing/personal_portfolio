@@ -225,7 +225,7 @@ const Contact = () => {
             <span>📄 Download Resume</span>
           </a>
           <a
-            href="https://linkedin.com/in/blessingagbonkpolor"
+            href="https://www.linkedin.com/in/blessing-ele-agbonkpolor"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 border-2 border-accent hover:bg-accent/10 text-accent rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"

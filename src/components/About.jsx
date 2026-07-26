@@ -19,25 +19,23 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm a strategic **Agile Project Manager** and **Data Analytics Specialist** with expertise in delivering high-impact solutions. 
-                With 5+ years of experience managing complex projects, I've led cross-functional teams from startups to enterprise environments, combining Agile best practices with data-driven decision-making.
+                I'm a Business & Systems Analyst with 10 years of experience transforming complex business challenges into data-driven solutions. I specialize in business requirements gathering, process improvement, and delivering analytics insights that drive strategic decision-making. My expertise spans data analysis, reporting, business intelligence, and Power BI dashboard development across diverse industries and enterprise environments.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                **My Unique Blend:**
-                - **Agile Excellence:** PMI-ACP, Certified Scrum Master (CSM), Certified Scrum Product Owner (CSPO) certifications
-                - **Data Analytics:** Hands-on experience transforming Electronic Medical Records (EMR) and clinical datasets into actionable insights using Python, SQL, and Power BI
-                - **Security-First Mindset:** ISC2 Cybersecurity certified with expertise in risk management and secure practices
+                Core Expertise:
+                - Business Analysis & Requirements Gathering: Eliciting, documenting, and translating complex business needs into actionable technical solutions
+                - Analytics & Reporting: Designing and building interactive Power BI dashboards and reports that deliver actionable insights
+                - Technical Skills: Advanced proficiency in Power BI, SQL, Microsoft Excel (Advanced), Python, and data visualization
+                - Process Improvement: Analyzing workflows and implementing solutions that drive efficiency and measurable business impact
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                I recently led an end-to-end **Clinical Data Intelligence Initiative**, managing Agile teams through data cleaning, quality assurance, and validation cycles. 
-                I delivered interactive Power BI dashboards that enable clinicians to make evidence-based decisions, while reducing data processing time by 68% with 99.8% accuracy.
+                I've successfully delivered end-to-end analytics initiatives including interactive dashboards that empower business leaders to make evidence-based decisions. Recent work includes building intelligent reporting systems that improved data processing efficiency by 68% while maintaining 99.8% accuracy across 500K+ records. My approach combines technical rigor with business acumen to ensure solutions deliver real organizational value.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                My expertise spans **Agile transformation**, **healthcare data analytics**, **DevSecOps automation**, and **continuous improvement**. 
-                I'm passionate about mentoring teams, knowledge sharing, and translating technical insights into business impact.
+                Complementary strengths in Agile Project Management (PMP, PMI-ACP, CSM, CSPO certified) and Cybersecurity (ISC2 Certified in Cybersecurity) enable me to deliver secure, well-governed analytics solutions within enterprise frameworks. I'm passionate about continuous improvement, mentoring teams, and translating complex data into clear business insights.
               </p>
 
               <div className="pt-4 flex gap-4 flex-wrap">
@@ -64,9 +62,9 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { number: '50+', label: 'Projects Delivered' },
-                { number: '5+', label: 'Years Experience' },
+                { number: '10', label: 'Years Experience' },
                 { number: '12+', label: 'Agile Sprints' },
-                { number: '4', label: 'Certifications' },
+                { number: '5', label: 'Certifications' },
                 { number: '500K+', label: 'Records Processed' },
                 { number: '99.8%', label: 'Data Accuracy' },
               ].map((stat, index) => (

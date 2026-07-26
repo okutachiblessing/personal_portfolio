@@ -319,7 +319,7 @@ examples/
 ## Author & Contact
 
 **Blessing Okutachi**  
-Agile Project Manager | Data Analytics Specialist | Cybersecurity Expert
+Business & Systems Analyst | Analytics & Reporting | Power BI Developer
 
 - Portfolio: https://blessing-portfolio.pages.dev
 - GitHub: https://github.com/okutachiblessing/personal_portfolio

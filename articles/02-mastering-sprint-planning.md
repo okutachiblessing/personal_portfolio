@@ -310,4 +310,4 @@ The next time you walk into sprint planning, remember: you're not scheduling wor
 
 ---
 
-**About the Author:** PMI-ACP certified Agile Project Manager with 5+ years of experience helping teams master sprint planning and velocity forecasting. Passionate about data-driven decision-making in Agile environments.
+**About the Author:** PMI-ACP certified Agile Project Manager with 10 years of experience helping teams master sprint planning and velocity forecasting. Passionate about data-driven decision-making in Agile environments.
